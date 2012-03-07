@@ -37,19 +37,23 @@ int offset;
 - (void)create
 {
     helloText = [FlxText textWithWidth:FlxG.width
-                                  text:@"iCade For Flixel-iOS"
+                                  text:@"iCade For Flixel-iOS\nButtons have a buttonBegan icon"
                                   font:nil
-                                  size:8.0];
+                                  size:16.0];
     helloText.color = 0xffffffff;
     helloText.alignment = @"center";
     helloText.x = 0;
-    helloText.y = 15;
+    helloText.y = 5;
     [self add:helloText];
+    
+    // add a joystick sprite
     
     joystickSprite = [FlxSprite spriteWithX:30
                                    y:30
                              graphic:@"red-ball.png"];
     [self add:joystickSprite];
+    
+    //add button sprites
     
     buttonA = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(250, 80)];
     [self add:buttonA];    
@@ -76,6 +80,51 @@ int offset;
     [self add:buttonH];    
     
     
+    //just pressed icons
+    
+    buttonA2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(250, 40)];
+    buttonA2.scale=CGPointMake(0.2, 0.2);
+    buttonA2.visible=NO;
+    [self add:buttonA2];    
+    
+    buttonB2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(250, 140)];
+    buttonB2.scale=CGPointMake(0.2, 0.2);
+    buttonB2.visible=NO;
+    [self add:buttonB2];  
+    
+    buttonC2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(300, 40)];
+    buttonC2.scale=CGPointMake(0.2, 0.2);
+    buttonC2.visible=NO;
+   [self add:buttonC2];    
+    
+    buttonD2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(300, 140)];
+    buttonD2.scale=CGPointMake(0.2, 0.2);
+    buttonD2.visible=NO;
+   [self add:buttonD2];
+    
+    buttonE2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(350, 40)];
+    buttonE2.scale=CGPointMake(0.2, 0.2);
+    buttonE2.visible=NO;
+    [self add:buttonE2];    
+    
+    buttonF2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(350, 140)];
+    buttonF2.scale=CGPointMake(0.2, 0.2);
+    buttonF2.visible=NO;
+   [self add:buttonF2];  
+    
+    buttonG2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(400, 40)];
+    buttonG2.scale=CGPointMake(0.2, 0.2);
+    buttonG2.visible=NO;
+    [self add:buttonG2];    
+    
+    buttonH2 = [iCadeButtonSprite iCadeButtonSpriteWithOrigin:CGPointMake(400, 140)];
+    buttonH2.scale=CGPointMake(0.2, 0.2);
+    buttonH2.visible=NO;
+   [self add:buttonH2];  
+    
+    
+    
+    
     
     [buttonA play:@"redup"];
     [buttonB play:@"redup"];
@@ -86,7 +135,14 @@ int offset;
     [buttonG play:@"whiteup"];
     [buttonH play:@"whiteup"];     
 
-    
+    [buttonA2 play:@"redup"];
+    [buttonB2 play:@"redup"];
+    [buttonC2 play:@"blackup"];
+    [buttonD2 play:@"blackup"];    
+    [buttonE2 play:@"blackup"];
+    [buttonF2 play:@"blackup"];
+    [buttonG2 play:@"whiteup"];
+    [buttonH2 play:@"whiteup"];     
 
     offset = 15;
     
@@ -102,8 +158,7 @@ int offset;
 
 - (void)update
 {
-    
-//    NSLog(@"%d", FlxG.touches.iCadeUp);
+    //joystick
     
     if (FlxG.touches.iCadeUp) {
         joystickSprite.y = 115;
@@ -127,6 +182,9 @@ int offset;
         joystickSprite.x = 30;
         
     }    
+    
+    //buttons 
+    
     
     if (FlxG.touches.iCadeA) {
         [buttonA play:@"reddown"];
@@ -155,8 +213,7 @@ int offset;
     else {
         [buttonD play:@"blackup"];
     }  
-    
-    
+
     if (FlxG.touches.iCadeE) {
         [buttonE play:@"blackdown"];
     }
@@ -184,6 +241,66 @@ int offset;
     else {
         [buttonH play:@"whiteup"];
     }
+    
+    
+    // test button began state
+    
+    if (FlxG.touches.iCadeABegan) {
+        buttonA2.visible=YES;
+    }
+    else {
+        buttonA2.visible=NO;
+    }
+    
+    if (FlxG.touches.iCadeBBegan) {
+        buttonB2.visible=YES;
+    }
+    else {
+        buttonB2.visible=NO;
+    }
+    
+    if (FlxG.touches.iCadeCBegan) {
+        buttonC2.visible=YES;
+    }
+    else {
+        buttonC2.visible=NO;
+    }
+    
+    if (FlxG.touches.iCadeDBegan) {
+        buttonD2.visible=YES;
+    }
+    else {
+        buttonD2.visible=NO;
+    }  
+    
+    if (FlxG.touches.iCadeEBegan) {
+        buttonE2.visible=YES;
+    }
+    else {
+        buttonE2.visible=NO;
+    }
+    
+    if (FlxG.touches.iCadeFBegan) {
+        buttonF2.visible=YES;
+    }
+    else {
+        buttonF2.visible=NO;
+    }
+    
+    if (FlxG.touches.iCadeGBegan) {
+        buttonG2.visible=YES;
+    }
+    else {
+        buttonG2.visible=NO;
+    }
+    
+    if (FlxG.touches.iCadeHBegan) {
+        buttonH2.visible=YES;
+    }
+    else {
+        buttonH2.visible=NO;
+    }
+    
     
     
     

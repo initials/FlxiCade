@@ -31,6 +31,21 @@
     iCadeButtonSprite * buttonH;
     
     
+    FlxSprite * joystickSpriteL;
+    FlxSprite * joystickSpriteR;
+    FlxSprite * joystickSpriteD;
+    FlxSprite * joystickSpriteU;
+
+    iCadeButtonSprite * buttonA2;
+    iCadeButtonSprite * buttonB2;
+    iCadeButtonSprite * buttonC2;
+    iCadeButtonSprite * buttonD2;
+    iCadeButtonSprite * buttonE2;
+    iCadeButtonSprite * buttonF2;
+    iCadeButtonSprite * buttonG2;
+    iCadeButtonSprite * buttonH2;
+    
+    
 }
 
 @end

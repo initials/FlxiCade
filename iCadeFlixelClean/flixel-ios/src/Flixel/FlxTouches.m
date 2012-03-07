@@ -28,7 +28,9 @@
 @synthesize iCadeUp, iCadeRight, iCadeDown, iCadeLeft;
 @synthesize iCadeA, iCadeB, iCadeC, iCadeD;
 @synthesize iCadeE, iCadeF, iCadeG, iCadeH;
-
+@synthesize iCadeUpBegan, iCadeRightBegan, iCadeDownBegan, iCadeLeftBegan;
+@synthesize iCadeABegan, iCadeBBegan, iCadeCBegan, iCadeDBegan;
+@synthesize iCadeEBegan, iCadeFBegan, iCadeGBegan, iCadeHBegan;
 
 - (void) processTouches:(NSSet *)newTouches
 {
@@ -57,20 +59,33 @@
   touchesBegan = NO;
   touchesEnded = NO;
     
-    iCadeUp=NO;
-    iCadeRight=NO;
-    iCadeDown=NO;
-    iCadeLeft=NO; 
- 
-    iCadeA=NO;
-    iCadeB=NO;
-    iCadeC=NO;
-    iCadeD=NO;
-    iCadeE=NO;
-    iCadeF=NO;
-    iCadeG=NO;
-    iCadeH=NO;
+    //iCadeUp=NO;
+//    iCadeRight=NO;
+//    iCadeDown=NO;
+//    iCadeLeft=NO; 
+// 
+//    iCadeA=NO;
+//    iCadeB=NO;
+//    iCadeC=NO;
+//    iCadeD=NO;
+//    iCadeE=NO;
+//    iCadeF=NO;
+//    iCadeG=NO;
+//    iCadeH=NO;
     
+    iCadeUpBegan=NO;
+    iCadeRightBegan=NO;
+    iCadeDownBegan=NO;
+    iCadeLeftBegan=NO; 
+    
+    iCadeABegan=NO;
+    iCadeBBegan=NO;
+    iCadeCBegan=NO;
+    iCadeDBegan=NO;
+    iCadeEBegan=NO;
+    iCadeFBegan=NO;
+    iCadeGBegan=NO;
+    iCadeHBegan=NO;    
     
   if (newData) {
     touchesBegan = nextTouchesBegan;
@@ -87,52 +102,208 @@
     
     FlxGame * game = [FlxG game];
     
+    //joystick up
+    
     if (game.iCadeJoystickUp  ) {
+        
+        if (iCadeUp==NO) {
+            iCadeUpBegan=YES;
+        }
+        else {
+            iCadeUpBegan=NO;
+        }
+        
         iCadeUp=YES;
     }
+    else {
+        iCadeUp=NO;
+    }
+ 
+    //joystick Right
     
     if (game.iCadeJoystickRight  ) {
+        
+        if (iCadeRight==NO) {
+            iCadeRightBegan=YES;
+        }
+        else {
+            iCadeRightBegan=NO;
+        }
+        
         iCadeRight=YES;
     }
+    else {
+        iCadeRight=NO;
+    }
+    
+    //joystick Down
     
     if (game.iCadeJoystickDown  ) {
+        
+        if (iCadeDown==NO) {
+            iCadeDownBegan=YES;
+        }
+        else {
+            iCadeDownBegan=NO;
+        }
+        
         iCadeDown=YES;
     }
+    else {
+        iCadeDown=NO;
+    }
+    
+    //joystick Left
     
     if (game.iCadeJoystickLeft  ) {
+        
+        if (iCadeLeft==NO) {
+            iCadeLeftBegan=YES;
+        }
+        else {
+            iCadeLeftBegan=NO;
+        }
+        
         iCadeLeft=YES;
     }
-
+    else {
+        iCadeLeft=NO;
+    }
+    
+    //Button A
+    
     if (game.iCadeButtonA  ) {
+        
+        if (iCadeA==NO) {
+            iCadeABegan=YES;
+        }
+        else {
+            iCadeABegan=NO;
+        }
+        
         iCadeA=YES;
     }
-
+    else {
+        iCadeA=NO;
+    }
+    
+    //Button B
+    
     if (game.iCadeButtonB  ) {
+        
+        if (iCadeB==NO) {
+            iCadeBBegan=YES;
+        }
+        else {
+            iCadeBBegan=NO;
+        }
+        
         iCadeB=YES;
     }
+    else {
+        iCadeB=NO;
+    }    
+    
+    //Button C
     
     if (game.iCadeButtonC  ) {
+        
+        if (iCadeC==NO) {
+            iCadeCBegan=YES;
+        }
+        else {
+            iCadeCBegan=NO;
+        }
+        
         iCadeC=YES;
     }
+    else {
+        iCadeC=NO;
+    }
+    
+    //Button D
     
     if (game.iCadeButtonD  ) {
+        
+        if (iCadeD==NO) {
+            iCadeDBegan=YES;
+        }
+        else {
+            iCadeDBegan=NO;
+        }
+        
         iCadeD=YES;
     }
+    else {
+        iCadeD=NO;
+    }
+    
+    //Button E
     
     if (game.iCadeButtonE  ) {
+        
+        if (iCadeE==NO) {
+            iCadeEBegan=YES;
+        }
+        else {
+            iCadeEBegan=NO;
+        }
+        
         iCadeE=YES;
     }
+    else {
+        iCadeE=NO;
+    }
+    
+    //Button F
     
     if (game.iCadeButtonF  ) {
+        
+        if (iCadeF==NO) {
+            iCadeFBegan=YES;
+        }
+        else {
+            iCadeFBegan=NO;
+        }
+        
         iCadeF=YES;
     }
+    else {
+        iCadeF=NO;
+    }    
+    
+    //Button G
     
     if (game.iCadeButtonG  ) {
+        
+        if (iCadeG==NO) {
+            iCadeGBegan=YES;
+        }
+        else {
+            iCadeGBegan=NO;
+        }
+        
         iCadeG=YES;
     }
+    else {
+        iCadeG=NO;
+    }
+    
+    //Button H
     
     if (game.iCadeButtonH  ) {
+        
+        if (iCadeH==NO) {
+            iCadeHBegan=YES;
+        }
+        else {
+            iCadeHBegan=NO;
+        }
+        
         iCadeH=YES;
+    }
+    else {
+        iCadeH=NO;
     }
     
     

@@ -38,6 +38,19 @@
     BOOL iCadeG;
     BOOL iCadeH;
     
+    BOOL iCadeUpBegan;
+    BOOL iCadeRightBegan;
+    BOOL iCadeLeftBegan;
+    BOOL iCadeDownBegan;  
+    BOOL iCadeABegan;
+    BOOL iCadeBBegan;
+    BOOL iCadeCBegan;
+    BOOL iCadeDBegan;    
+    BOOL iCadeEBegan;
+    BOOL iCadeFBegan;
+    BOOL iCadeGBegan;
+    BOOL iCadeHBegan;
+    
   CGPoint nextScreenTouchPoint;
   CGPoint nextLastScreenTouchPoint;
   CGPoint screenTouchPoint;
@@ -70,7 +83,18 @@
 @property(nonatomic,readonly) BOOL iCadeH;
 
 
-
+@property(nonatomic,readonly) BOOL iCadeUpBegan;
+@property(nonatomic,readonly) BOOL iCadeRightBegan;
+@property(nonatomic,readonly) BOOL iCadeLeftBegan;
+@property(nonatomic,readonly) BOOL iCadeDownBegan;  
+@property(nonatomic,readonly) BOOL iCadeABegan;
+@property(nonatomic,readonly) BOOL iCadeBBegan;
+@property(nonatomic,readonly) BOOL iCadeCBegan;
+@property(nonatomic,readonly) BOOL iCadeDBegan;
+@property(nonatomic,readonly) BOOL iCadeEBegan;
+@property(nonatomic,readonly) BOOL iCadeFBegan;
+@property(nonatomic,readonly) BOOL iCadeGBegan;
+@property(nonatomic,readonly) BOOL iCadeHBegan;
 
 
 
