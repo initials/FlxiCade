@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2C5F0EA1507458E004B2CD2 /* iCadeButtonSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C5F0E91507458E004B2CD2 /* iCadeButtonSprite.m */; };
+		D2C5F0ED1507469E004B2CD2 /* buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C5F0EC1507469E004B2CD2 /* buttons.png */; };
+		D2F88DF81507332F0089E971 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88DF71507332F0089E971 /* QuartzCore.framework */; };
+		D2F88DFA1507332F0089E971 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88DF91507332F0089E971 /* OpenGLES.framework */; };
+		D2F88DFC1507332F0089E971 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88DFB1507332F0089E971 /* OpenAL.framework */; };
+		D2F88DFE1507332F0089E971 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88DFD1507332F0089E971 /* AudioToolbox.framework */; };
+		D2F88E001507332F0089E971 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88DFF1507332F0089E971 /* AVFoundation.framework */; };
+		D2F88E021507332F0089E971 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88E011507332F0089E971 /* UIKit.framework */; };
+		D2F88E041507332F0089E971 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88E031507332F0089E971 /* Foundation.framework */; };
+		D2F88E061507332F0089E971 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88E051507332F0089E971 /* CoreGraphics.framework */; };
+		D2F88E081507332F0089E971 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F88E071507332F0089E971 /* CoreAudio.framework */; };
+		D2F88E0C1507332F0089E971 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E0B1507332F0089E971 /* Default.png */; };
+		D2F88E101507332F0089E971 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E0F1507332F0089E971 /* Icon-72.png */; };
+		D2F88E121507332F0089E971 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E111507332F0089E971 /* Icon-Small-50.png */; };
+		D2F88E141507332F0089E971 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E131507332F0089E971 /* Icon-Small.png */; };
+		D2F88E161507332F0089E971 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E151507332F0089E971 /* Icon-Small@2x.png */; };
+		D2F88E181507332F0089E971 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E171507332F0089E971 /* Icon.png */; };
+		D2F88E1A1507332F0089E971 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E191507332F0089E971 /* Icon@2x.png */; };
+		D2F88E1D1507332F0089E971 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E1C1507332F0089E971 /* iTunesArtwork */; };
+		D2F88E20150733300089E971 /* ENGINE_LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E1F150733300089E971 /* ENGINE_LICENSE.TXT */; };
+		D2F88E23150733300089E971 /* Flixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2F88E22150733300089E971 /* Flixel.ttf */; };
+		D2F88E25150733300089E971 /* FlixelFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E24150733300089E971 /* FlixelFont.m */; };
+		D2F88E50150733300089E971 /* FlashFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E4F150733300089E971 /* FlashFunction.m */; };
+		D2F88E52150733300089E971 /* FlashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E51150733300089E971 /* FlashObject.m */; };
+		D2F88E54150733300089E971 /* FlashPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E53150733300089E971 /* FlashPoint.m */; };
+		D2F88E56150733300089E971 /* FlashRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E55150733300089E971 /* FlashRectangle.m */; };
+		D2F88E59150733300089E971 /* FlixelAPTBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E58150733300089E971 /* FlixelAPTBindings.m */; };
+		D2F88E5B150733300089E971 /* FlxAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E5A150733300089E971 /* FlxAnim.m */; };
+		D2F88E5D150733300089E971 /* FlxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E5C150733300089E971 /* FlxButton.m */; };
+		D2F88E5F150733300089E971 /* FlxEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E5E150733300089E971 /* FlxEmitter.m */; };
+		D2F88E61150733300089E971 /* FlxFade.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E60150733300089E971 /* FlxFade.m */; };
+		D2F88E63150733300089E971 /* FlxFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E62150733300089E971 /* FlxFlash.m */; };
+		D2F88E65150733300089E971 /* FlxG.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E64150733300089E971 /* FlxG.m */; };
+		D2F88E67150733300089E971 /* FlxGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E66150733300089E971 /* FlxGame.m */; };
+		D2F88E69150733300089E971 /* FlxGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E68150733300089E971 /* FlxGLView.m */; };
+		D2F88E6B150733300089E971 /* FlxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E6A150733300089E971 /* FlxGroup.m */; };
+		D2F88E6D150733300089E971 /* FlxList.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E6C150733300089E971 /* FlxList.m */; };
+		D2F88E6F150733300089E971 /* FlxManagedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E6E150733300089E971 /* FlxManagedSprite.m */; };
+		D2F88E71150733300089E971 /* FlxObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E70150733300089E971 /* FlxObject.m */; };
+		D2F88E73150733300089E971 /* FlxPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E72150733300089E971 /* FlxPoint.m */; };
+		D2F88E75150733300089E971 /* FlxQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E74150733300089E971 /* FlxQuadTree.m */; };
+		D2F88E77150733300089E971 /* FlxQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E76150733300089E971 /* FlxQuake.m */; };
+		D2F88E79150733300089E971 /* FlxRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E78150733300089E971 /* FlxRect.m */; };
+		D2F88E7B150733300089E971 /* FlxSave.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E7A150733300089E971 /* FlxSave.m */; };
+		D2F88E7D150733300089E971 /* FlxSound.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E7C150733300089E971 /* FlxSound.m */; };
+		D2F88E7F150733300089E971 /* FlxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E7E150733300089E971 /* FlxSprite.m */; };
+		D2F88E81150733300089E971 /* FlxState.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E80150733300089E971 /* FlxState.m */; };
+		D2F88E83150733300089E971 /* FlxText.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E82150733300089E971 /* FlxText.m */; };
+		D2F88E85150733300089E971 /* FlxTileblock.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E84150733300089E971 /* FlxTileblock.m */; };
+		D2F88E87150733300089E971 /* FlxTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E86150733300089E971 /* FlxTouches.m */; };
+		D2F88E89150733300089E971 /* FlxU.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E88150733300089E971 /* FlxU.m */; };
+		D2F88E8C150733300089E971 /* SemiSecretFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E8B150733300089E971 /* SemiSecretFont.m */; };
+		D2F88E8E150733300089E971 /* SemiSecretText.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E8D150733300089E971 /* SemiSecretText.m */; };
+		D2F88E90150733300089E971 /* SemiSecretTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E8F150733300089E971 /* SemiSecretTexture.m */; };
+		D2F88E95150733300089E971 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E94150733300089E971 /* main.m */; };
+		D2F88E99150733300089E971 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E98150733300089E971 /* AppDelegate.m */; };
+		D2F88E9C150733300089E971 /* UIImage+RIFAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E9B150733300089E971 /* UIImage+RIFAddition.m */; };
+		D2F88E9F150733300089E971 /* iCadeFlixelClean.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88E9E150733300089E971 /* iCadeFlixelClean.m */; };
+		D2F88EA2150733300089E971 /* iCadeFlixelCleanState.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88EA1150733300089E971 /* iCadeFlixelCleanState.m */; };
+		D2F88EB1150735830089E971 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F88EAF150735830089E971 /* iCadeReaderView.m */; };
+		D2F88EBE15073C060089E971 /* button-down-black.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EB715073C060089E971 /* button-down-black.png */; };
+		D2F88EBF15073C060089E971 /* button-down-white.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EB815073C060089E971 /* button-down-white.png */; };
+		D2F88EC015073C060089E971 /* button-down.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EB915073C060089E971 /* button-down.png */; };
+		D2F88EC115073C060089E971 /* button-up-black.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EBA15073C060089E971 /* button-up-black.png */; };
+		D2F88EC215073C060089E971 /* button-up-white.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EBB15073C060089E971 /* button-up-white.png */; };
+		D2F88EC315073C060089E971 /* button-up.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EBC15073C060089E971 /* button-up.png */; };
+		D2F88EC415073C060089E971 /* red-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88EBD15073C060089E971 /* red-ball.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2C5F0E81507458E004B2CD2 /* iCadeButtonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCadeButtonSprite.h; path = Classes/iCadeButtonSprite.h; sourceTree = "<group>"; };
+		D2C5F0E91507458E004B2CD2 /* iCadeButtonSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCadeButtonSprite.m; path = Classes/iCadeButtonSprite.m; sourceTree = "<group>"; };
+		D2C5F0EC1507469E004B2CD2 /* buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttons.png; path = Resources/images/buttons.png; sourceTree = "<group>"; };
+		D2F88DF31507332F0089E971 /* iCadeFlixelClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCadeFlixelClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F88DF71507332F0089E971 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D2F88DF91507332F0089E971 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D2F88DFB1507332F0089E971 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D2F88DFD1507332F0089E971 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D2F88DFF1507332F0089E971 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D2F88E011507332F0089E971 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2F88E031507332F0089E971 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2F88E051507332F0089E971 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2F88E071507332F0089E971 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D2F88E0B1507332F0089E971 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		D2F88E0F1507332F0089E971 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
+		D2F88E111507332F0089E971 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
+		D2F88E131507332F0089E971 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
+		D2F88E151507332F0089E971 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D2F88E171507332F0089E971 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		D2F88E191507332F0089E971 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		D2F88E1B1507332F0089E971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		D2F88E1C1507332F0089E971 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = text; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
+		D2F88E1F150733300089E971 /* ENGINE_LICENSE.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; name = ENGINE_LICENSE.TXT; path = "flixel-ios/ENGINE_LICENSE.TXT"; sourceTree = "<group>"; };
+		D2F88E22150733300089E971 /* Flixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Flixel.ttf; path = "flixel-ios/fonts/Flixel.ttf"; sourceTree = "<group>"; };
+		D2F88E24150733300089E971 /* FlixelFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlixelFont.m; path = "flixel-ios/fonts/FlixelFont.m"; sourceTree = "<group>"; };
+		D2F88E28150733300089E971 /* Flash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Flash.h; path = "flixel-ios/Headers/Flash/Flash.h"; sourceTree = "<group>"; };
+		D2F88E29150733300089E971 /* FlashFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlashFunction.h; path = "flixel-ios/Headers/Flash/FlashFunction.h"; sourceTree = "<group>"; };
+		D2F88E2A150733300089E971 /* FlashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlashObject.h; path = "flixel-ios/Headers/Flash/FlashObject.h"; sourceTree = "<group>"; };
+		D2F88E2B150733300089E971 /* FlashPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlashPoint.h; path = "flixel-ios/Headers/Flash/FlashPoint.h"; sourceTree = "<group>"; };
+		D2F88E2C150733300089E971 /* FlashRectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlashRectangle.h; path = "flixel-ios/Headers/Flash/FlashRectangle.h"; sourceTree = "<group>"; };
+		D2F88E2E150733300089E971 /* Flixel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Flixel.h; path = "flixel-ios/Headers/Flixel/Flixel.h"; sourceTree = "<group>"; };
+		D2F88E2F150733300089E971 /* FlixelAPTBindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlixelAPTBindings.h; path = "flixel-ios/Headers/Flixel/FlixelAPTBindings.h"; sourceTree = "<group>"; };
+		D2F88E30150733300089E971 /* FlxAnim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxAnim.h; path = "flixel-ios/Headers/Flixel/FlxAnim.h"; sourceTree = "<group>"; };
+		D2F88E31150733300089E971 /* FlxButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxButton.h; path = "flixel-ios/Headers/Flixel/FlxButton.h"; sourceTree = "<group>"; };
+		D2F88E32150733300089E971 /* FlxEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxEmitter.h; path = "flixel-ios/Headers/Flixel/FlxEmitter.h"; sourceTree = "<group>"; };
+		D2F88E33150733300089E971 /* FlxFade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxFade.h; path = "flixel-ios/Headers/Flixel/FlxFade.h"; sourceTree = "<group>"; };
+		D2F88E34150733300089E971 /* FlxFlash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxFlash.h; path = "flixel-ios/Headers/Flixel/FlxFlash.h"; sourceTree = "<group>"; };
+		D2F88E35150733300089E971 /* FlxG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxG.h; path = "flixel-ios/Headers/Flixel/FlxG.h"; sourceTree = "<group>"; };
+		D2F88E36150733300089E971 /* FlxGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxGame.h; path = "flixel-ios/Headers/Flixel/FlxGame.h"; sourceTree = "<group>"; };
+		D2F88E37150733300089E971 /* FlxGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxGLView.h; path = "flixel-ios/Headers/Flixel/FlxGLView.h"; sourceTree = "<group>"; };
+		D2F88E38150733300089E971 /* FlxGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxGroup.h; path = "flixel-ios/Headers/Flixel/FlxGroup.h"; sourceTree = "<group>"; };
+		D2F88E39150733300089E971 /* FlxList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxList.h; path = "flixel-ios/Headers/Flixel/FlxList.h"; sourceTree = "<group>"; };
+		D2F88E3A150733300089E971 /* FlxManagedSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxManagedSprite.h; path = "flixel-ios/Headers/Flixel/FlxManagedSprite.h"; sourceTree = "<group>"; };
+		D2F88E3B150733300089E971 /* FlxObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxObject.h; path = "flixel-ios/Headers/Flixel/FlxObject.h"; sourceTree = "<group>"; };
+		D2F88E3C150733300089E971 /* FlxPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxPoint.h; path = "flixel-ios/Headers/Flixel/FlxPoint.h"; sourceTree = "<group>"; };
+		D2F88E3D150733300089E971 /* FlxQuadTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxQuadTree.h; path = "flixel-ios/Headers/Flixel/FlxQuadTree.h"; sourceTree = "<group>"; };
+		D2F88E3E150733300089E971 /* FlxQuake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxQuake.h; path = "flixel-ios/Headers/Flixel/FlxQuake.h"; sourceTree = "<group>"; };
+		D2F88E3F150733300089E971 /* FlxRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxRect.h; path = "flixel-ios/Headers/Flixel/FlxRect.h"; sourceTree = "<group>"; };
+		D2F88E40150733300089E971 /* FlxSave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxSave.h; path = "flixel-ios/Headers/Flixel/FlxSave.h"; sourceTree = "<group>"; };
+		D2F88E41150733300089E971 /* FlxSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxSound.h; path = "flixel-ios/Headers/Flixel/FlxSound.h"; sourceTree = "<group>"; };
+		D2F88E42150733300089E971 /* FlxSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxSprite.h; path = "flixel-ios/Headers/Flixel/FlxSprite.h"; sourceTree = "<group>"; };
+		D2F88E43150733300089E971 /* FlxState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxState.h; path = "flixel-ios/Headers/Flixel/FlxState.h"; sourceTree = "<group>"; };
+		D2F88E44150733300089E971 /* FlxText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxText.h; path = "flixel-ios/Headers/Flixel/FlxText.h"; sourceTree = "<group>"; };
+		D2F88E45150733300089E971 /* FlxTileblock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxTileblock.h; path = "flixel-ios/Headers/Flixel/FlxTileblock.h"; sourceTree = "<group>"; };
+		D2F88E46150733300089E971 /* FlxTouches.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxTouches.h; path = "flixel-ios/Headers/Flixel/FlxTouches.h"; sourceTree = "<group>"; };
+		D2F88E47150733300089E971 /* FlxU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlxU.h; path = "flixel-ios/Headers/Flixel/FlxU.h"; sourceTree = "<group>"; };
+		D2F88E49150733300089E971 /* SemiSecret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SemiSecret.h; path = "flixel-ios/Headers/SemiSecret/SemiSecret.h"; sourceTree = "<group>"; };
+		D2F88E4A150733300089E971 /* SemiSecretFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SemiSecretFont.h; path = "flixel-ios/Headers/SemiSecret/SemiSecretFont.h"; sourceTree = "<group>"; };
+		D2F88E4B150733300089E971 /* SemiSecretText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SemiSecretText.h; path = "flixel-ios/Headers/SemiSecret/SemiSecretText.h"; sourceTree = "<group>"; };
+		D2F88E4C150733300089E971 /* SemiSecretTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SemiSecretTexture.h; path = "flixel-ios/Headers/SemiSecret/SemiSecretTexture.h"; sourceTree = "<group>"; };
+		D2F88E4F150733300089E971 /* FlashFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlashFunction.m; path = "flixel-ios/src/Flash/FlashFunction.m"; sourceTree = "<group>"; };
+		D2F88E51150733300089E971 /* FlashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlashObject.m; path = "flixel-ios/src/Flash/FlashObject.m"; sourceTree = "<group>"; };
+		D2F88E53150733300089E971 /* FlashPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlashPoint.m; path = "flixel-ios/src/Flash/FlashPoint.m"; sourceTree = "<group>"; };
+		D2F88E55150733300089E971 /* FlashRectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlashRectangle.m; path = "flixel-ios/src/Flash/FlashRectangle.m"; sourceTree = "<group>"; };
+		D2F88E58150733300089E971 /* FlixelAPTBindings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlixelAPTBindings.m; path = "flixel-ios/src/Flixel/FlixelAPTBindings.m"; sourceTree = "<group>"; };
+		D2F88E5A150733300089E971 /* FlxAnim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxAnim.m; path = "flixel-ios/src/Flixel/FlxAnim.m"; sourceTree = "<group>"; };
+		D2F88E5C150733300089E971 /* FlxButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxButton.m; path = "flixel-ios/src/Flixel/FlxButton.m"; sourceTree = "<group>"; };
+		D2F88E5E150733300089E971 /* FlxEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxEmitter.m; path = "flixel-ios/src/Flixel/FlxEmitter.m"; sourceTree = "<group>"; };
+		D2F88E60150733300089E971 /* FlxFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxFade.m; path = "flixel-ios/src/Flixel/FlxFade.m"; sourceTree = "<group>"; };
+		D2F88E62150733300089E971 /* FlxFlash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxFlash.m; path = "flixel-ios/src/Flixel/FlxFlash.m"; sourceTree = "<group>"; };
+		D2F88E64150733300089E971 /* FlxG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxG.m; path = "flixel-ios/src/Flixel/FlxG.m"; sourceTree = "<group>"; };
+		D2F88E66150733300089E971 /* FlxGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxGame.m; path = "flixel-ios/src/Flixel/FlxGame.m"; sourceTree = "<group>"; };
+		D2F88E68150733300089E971 /* FlxGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxGLView.m; path = "flixel-ios/src/Flixel/FlxGLView.m"; sourceTree = "<group>"; };
+		D2F88E6A150733300089E971 /* FlxGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxGroup.m; path = "flixel-ios/src/Flixel/FlxGroup.m"; sourceTree = "<group>"; };
+		D2F88E6C150733300089E971 /* FlxList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxList.m; path = "flixel-ios/src/Flixel/FlxList.m"; sourceTree = "<group>"; };
+		D2F88E6E150733300089E971 /* FlxManagedSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxManagedSprite.m; path = "flixel-ios/src/Flixel/FlxManagedSprite.m"; sourceTree = "<group>"; };
+		D2F88E70150733300089E971 /* FlxObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxObject.m; path = "flixel-ios/src/Flixel/FlxObject.m"; sourceTree = "<group>"; };
+		D2F88E72150733300089E971 /* FlxPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxPoint.m; path = "flixel-ios/src/Flixel/FlxPoint.m"; sourceTree = "<group>"; };
+		D2F88E74150733300089E971 /* FlxQuadTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxQuadTree.m; path = "flixel-ios/src/Flixel/FlxQuadTree.m"; sourceTree = "<group>"; };
+		D2F88E76150733300089E971 /* FlxQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxQuake.m; path = "flixel-ios/src/Flixel/FlxQuake.m"; sourceTree = "<group>"; };
+		D2F88E78150733300089E971 /* FlxRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxRect.m; path = "flixel-ios/src/Flixel/FlxRect.m"; sourceTree = "<group>"; };
+		D2F88E7A150733300089E971 /* FlxSave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxSave.m; path = "flixel-ios/src/Flixel/FlxSave.m"; sourceTree = "<group>"; };
+		D2F88E7C150733300089E971 /* FlxSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxSound.m; path = "flixel-ios/src/Flixel/FlxSound.m"; sourceTree = "<group>"; };
+		D2F88E7E150733300089E971 /* FlxSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxSprite.m; path = "flixel-ios/src/Flixel/FlxSprite.m"; sourceTree = "<group>"; };
+		D2F88E80150733300089E971 /* FlxState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxState.m; path = "flixel-ios/src/Flixel/FlxState.m"; sourceTree = "<group>"; };
+		D2F88E82150733300089E971 /* FlxText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxText.m; path = "flixel-ios/src/Flixel/FlxText.m"; sourceTree = "<group>"; };
+		D2F88E84150733300089E971 /* FlxTileblock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxTileblock.m; path = "flixel-ios/src/Flixel/FlxTileblock.m"; sourceTree = "<group>"; };
+		D2F88E86150733300089E971 /* FlxTouches.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxTouches.m; path = "flixel-ios/src/Flixel/FlxTouches.m"; sourceTree = "<group>"; };
+		D2F88E88150733300089E971 /* FlxU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlxU.m; path = "flixel-ios/src/Flixel/FlxU.m"; sourceTree = "<group>"; };
+		D2F88E8B150733300089E971 /* SemiSecretFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SemiSecretFont.m; path = "flixel-ios/src/SemiSecret/SemiSecretFont.m"; sourceTree = "<group>"; };
+		D2F88E8D150733300089E971 /* SemiSecretText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SemiSecretText.m; path = "flixel-ios/src/SemiSecret/SemiSecretText.m"; sourceTree = "<group>"; };
+		D2F88E8F150733300089E971 /* SemiSecretTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SemiSecretTexture.m; path = "flixel-ios/src/SemiSecret/SemiSecretTexture.m"; sourceTree = "<group>"; };
+		D2F88E92150733300089E971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F88E93150733300089E971 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		D2F88E94150733300089E971 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2F88E97150733300089E971 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		D2F88E98150733300089E971 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		D2F88E9A150733300089E971 /* UIImage+RIFAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+RIFAddition.h"; path = "Classes/UIImage+RIFAddition.h"; sourceTree = "<group>"; };
+		D2F88E9B150733300089E971 /* UIImage+RIFAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RIFAddition.m"; path = "Classes/UIImage+RIFAddition.m"; sourceTree = "<group>"; };
+		D2F88E9D150733300089E971 /* iCadeFlixelClean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iCadeFlixelClean.h; path = Classes/iCadeFlixelClean.h; sourceTree = "<group>"; };
+		D2F88E9E150733300089E971 /* iCadeFlixelClean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = iCadeFlixelClean.m; path = Classes/iCadeFlixelClean.m; sourceTree = "<group>"; };
+		D2F88EA0150733300089E971 /* iCadeFlixelCleanState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iCadeFlixelCleanState.h; path = Classes/iCadeFlixelCleanState.h; sourceTree = "<group>"; };
+		D2F88EA1150733300089E971 /* iCadeFlixelCleanState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = iCadeFlixelCleanState.m; path = Classes/iCadeFlixelCleanState.m; sourceTree = "<group>"; };
+		D2F88EAE150735830089E971 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCadeReaderView.h; path = iCade/iCadeReaderView.h; sourceTree = "<group>"; };
+		D2F88EAF150735830089E971 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCadeReaderView.m; path = iCade/iCadeReaderView.m; sourceTree = "<group>"; };
+		D2F88EB0150735830089E971 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCadeState.h; path = iCade/iCadeState.h; sourceTree = "<group>"; };
+		D2F88EB715073C060089E971 /* button-down-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-down-black.png"; path = "Resources/images/button-down-black.png"; sourceTree = "<group>"; };
+		D2F88EB815073C060089E971 /* button-down-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-down-white.png"; path = "Resources/images/button-down-white.png"; sourceTree = "<group>"; };
+		D2F88EB915073C060089E971 /* button-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-down.png"; path = "Resources/images/button-down.png"; sourceTree = "<group>"; };
+		D2F88EBA15073C060089E971 /* button-up-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-up-black.png"; path = "Resources/images/button-up-black.png"; sourceTree = "<group>"; };
+		D2F88EBB15073C060089E971 /* button-up-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-up-white.png"; path = "Resources/images/button-up-white.png"; sourceTree = "<group>"; };
+		D2F88EBC15073C060089E971 /* button-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-up.png"; path = "Resources/images/button-up.png"; sourceTree = "<group>"; };
+		D2F88EBD15073C060089E971 /* red-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-ball.png"; path = "Resources/images/red-ball.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F88DF01507332F0089E971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F88DF81507332F0089E971 /* QuartzCore.framework in Frameworks */,
+				D2F88DFA1507332F0089E971 /* OpenGLES.framework in Frameworks */,
+				D2F88DFC1507332F0089E971 /* OpenAL.framework in Frameworks */,
+				D2F88DFE1507332F0089E971 /* AudioToolbox.framework in Frameworks */,
+				D2F88E001507332F0089E971 /* AVFoundation.framework in Frameworks */,
+				D2F88E021507332F0089E971 /* UIKit.framework in Frameworks */,
+				D2F88E041507332F0089E971 /* Foundation.framework in Frameworks */,
+				D2F88E061507332F0089E971 /* CoreGraphics.framework in Frameworks */,
+				D2F88E081507332F0089E971 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2F88DE81507332F0089E971 = {
+			isa = PBXGroup;
+			children = (
+				D2F88E091507332F0089E971 /* iCadeFlixelClean */,
+				D2F88DF61507332F0089E971 /* Frameworks */,
+				D2F88DF41507332F0089E971 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F88DF41507332F0089E971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88DF31507332F0089E971 /* iCadeFlixelClean.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F88DF61507332F0089E971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88DF71507332F0089E971 /* QuartzCore.framework */,
+				D2F88DF91507332F0089E971 /* OpenGLES.framework */,
+				D2F88DFB1507332F0089E971 /* OpenAL.framework */,
+				D2F88DFD1507332F0089E971 /* AudioToolbox.framework */,
+				D2F88DFF1507332F0089E971 /* AVFoundation.framework */,
+				D2F88E011507332F0089E971 /* UIKit.framework */,
+				D2F88E031507332F0089E971 /* Foundation.framework */,
+				D2F88E051507332F0089E971 /* CoreGraphics.framework */,
+				D2F88E071507332F0089E971 /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F88E091507332F0089E971 /* iCadeFlixelClean */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E0A1507332F0089E971 /* Resources */,
+				D2F88E1E150733300089E971 /* flixel-ios */,
+				D2F88E96150733300089E971 /* Classes */,
+				D2F88E91150733300089E971 /* Supporting Files */,
+			);
+			path = iCadeFlixelClean;
+			sourceTree = "<group>";
+		};
+		D2F88E0A1507332F0089E971 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2C5F0EC1507469E004B2CD2 /* buttons.png */,
+				D2F88EB715073C060089E971 /* button-down-black.png */,
+				D2F88EB815073C060089E971 /* button-down-white.png */,
+				D2F88EB915073C060089E971 /* button-down.png */,
+				D2F88EBA15073C060089E971 /* button-up-black.png */,
+				D2F88EBB15073C060089E971 /* button-up-white.png */,
+				D2F88EBC15073C060089E971 /* button-up.png */,
+				D2F88EBD15073C060089E971 /* red-ball.png */,
+				D2F88E0B1507332F0089E971 /* Default.png */,
+				D2F88E0F1507332F0089E971 /* Icon-72.png */,
+				D2F88E111507332F0089E971 /* Icon-Small-50.png */,
+				D2F88E131507332F0089E971 /* Icon-Small.png */,
+				D2F88E151507332F0089E971 /* Icon-Small@2x.png */,
+				D2F88E171507332F0089E971 /* Icon.png */,
+				D2F88E191507332F0089E971 /* Icon@2x.png */,
+				D2F88E1B1507332F0089E971 /* Info.plist */,
+				D2F88E1C1507332F0089E971 /* iTunesArtwork */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D2F88E1E150733300089E971 /* flixel-ios */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88EAE150735830089E971 /* iCadeReaderView.h */,
+				D2F88EAF150735830089E971 /* iCadeReaderView.m */,
+				D2F88EB0150735830089E971 /* iCadeState.h */,
+				D2F88E1F150733300089E971 /* ENGINE_LICENSE.TXT */,
+				D2F88E21150733300089E971 /* fonts */,
+				D2F88E26150733300089E971 /* Headers */,
+				D2F88E4D150733300089E971 /* src */,
+			);
+			name = "flixel-ios";
+			sourceTree = "<group>";
+		};
+		D2F88E21150733300089E971 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E22150733300089E971 /* Flixel.ttf */,
+				D2F88E24150733300089E971 /* FlixelFont.m */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		D2F88E26150733300089E971 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E27150733300089E971 /* Flash */,
+				D2F88E2D150733300089E971 /* Flixel */,
+				D2F88E48150733300089E971 /* SemiSecret */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D2F88E27150733300089E971 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E28150733300089E971 /* Flash.h */,
+				D2F88E29150733300089E971 /* FlashFunction.h */,
+				D2F88E2A150733300089E971 /* FlashObject.h */,
+				D2F88E2B150733300089E971 /* FlashPoint.h */,
+				D2F88E2C150733300089E971 /* FlashRectangle.h */,
+			);
+			name = Flash;
+			sourceTree = "<group>";
+		};
+		D2F88E2D150733300089E971 /* Flixel */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E2E150733300089E971 /* Flixel.h */,
+				D2F88E2F150733300089E971 /* FlixelAPTBindings.h */,
+				D2F88E30150733300089E971 /* FlxAnim.h */,
+				D2F88E31150733300089E971 /* FlxButton.h */,
+				D2F88E32150733300089E971 /* FlxEmitter.h */,
+				D2F88E33150733300089E971 /* FlxFade.h */,
+				D2F88E34150733300089E971 /* FlxFlash.h */,
+				D2F88E35150733300089E971 /* FlxG.h */,
+				D2F88E36150733300089E971 /* FlxGame.h */,
+				D2F88E37150733300089E971 /* FlxGLView.h */,
+				D2F88E38150733300089E971 /* FlxGroup.h */,
+				D2F88E39150733300089E971 /* FlxList.h */,
+				D2F88E3A150733300089E971 /* FlxManagedSprite.h */,
+				D2F88E3B150733300089E971 /* FlxObject.h */,
+				D2F88E3C150733300089E971 /* FlxPoint.h */,
+				D2F88E3D150733300089E971 /* FlxQuadTree.h */,
+				D2F88E3E150733300089E971 /* FlxQuake.h */,
+				D2F88E3F150733300089E971 /* FlxRect.h */,
+				D2F88E40150733300089E971 /* FlxSave.h */,
+				D2F88E41150733300089E971 /* FlxSound.h */,
+				D2F88E42150733300089E971 /* FlxSprite.h */,
+				D2F88E43150733300089E971 /* FlxState.h */,
+				D2F88E44150733300089E971 /* FlxText.h */,
+				D2F88E45150733300089E971 /* FlxTileblock.h */,
+				D2F88E46150733300089E971 /* FlxTouches.h */,
+				D2F88E47150733300089E971 /* FlxU.h */,
+			);
+			name = Flixel;
+			sourceTree = "<group>";
+		};
+		D2F88E48150733300089E971 /* SemiSecret */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E49150733300089E971 /* SemiSecret.h */,
+				D2F88E4A150733300089E971 /* SemiSecretFont.h */,
+				D2F88E4B150733300089E971 /* SemiSecretText.h */,
+				D2F88E4C150733300089E971 /* SemiSecretTexture.h */,
+			);
+			name = SemiSecret;
+			sourceTree = "<group>";
+		};
+		D2F88E4D150733300089E971 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E4E150733300089E971 /* Flash */,
+				D2F88E57150733300089E971 /* Flixel */,
+				D2F88E8A150733300089E971 /* SemiSecret */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		D2F88E4E150733300089E971 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E4F150733300089E971 /* FlashFunction.m */,
+				D2F88E51150733300089E971 /* FlashObject.m */,
+				D2F88E53150733300089E971 /* FlashPoint.m */,
+				D2F88E55150733300089E971 /* FlashRectangle.m */,
+			);
+			name = Flash;
+			sourceTree = "<group>";
+		};
+		D2F88E57150733300089E971 /* Flixel */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E58150733300089E971 /* FlixelAPTBindings.m */,
+				D2F88E5A150733300089E971 /* FlxAnim.m */,
+				D2F88E5C150733300089E971 /* FlxButton.m */,
+				D2F88E5E150733300089E971 /* FlxEmitter.m */,
+				D2F88E60150733300089E971 /* FlxFade.m */,
+				D2F88E62150733300089E971 /* FlxFlash.m */,
+				D2F88E64150733300089E971 /* FlxG.m */,
+				D2F88E66150733300089E971 /* FlxGame.m */,
+				D2F88E68150733300089E971 /* FlxGLView.m */,
+				D2F88E6A150733300089E971 /* FlxGroup.m */,
+				D2F88E6C150733300089E971 /* FlxList.m */,
+				D2F88E6E150733300089E971 /* FlxManagedSprite.m */,
+				D2F88E70150733300089E971 /* FlxObject.m */,
+				D2F88E72150733300089E971 /* FlxPoint.m */,
+				D2F88E74150733300089E971 /* FlxQuadTree.m */,
+				D2F88E76150733300089E971 /* FlxQuake.m */,
+				D2F88E78150733300089E971 /* FlxRect.m */,
+				D2F88E7A150733300089E971 /* FlxSave.m */,
+				D2F88E7C150733300089E971 /* FlxSound.m */,
+				D2F88E7E150733300089E971 /* FlxSprite.m */,
+				D2F88E80150733300089E971 /* FlxState.m */,
+				D2F88E82150733300089E971 /* FlxText.m */,
+				D2F88E84150733300089E971 /* FlxTileblock.m */,
+				D2F88E86150733300089E971 /* FlxTouches.m */,
+				D2F88E88150733300089E971 /* FlxU.m */,
+			);
+			name = Flixel;
+			sourceTree = "<group>";
+		};
+		D2F88E8A150733300089E971 /* SemiSecret */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E8B150733300089E971 /* SemiSecretFont.m */,
+				D2F88E8D150733300089E971 /* SemiSecretText.m */,
+				D2F88E8F150733300089E971 /* SemiSecretTexture.m */,
+			);
+			name = SemiSecret;
+			sourceTree = "<group>";
+		};
+		D2F88E91150733300089E971 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E92150733300089E971 /* Info.plist */,
+				D2F88E93150733300089E971 /* Prefix.pch */,
+				D2F88E94150733300089E971 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2F88E96150733300089E971 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2F88E97150733300089E971 /* AppDelegate.h */,
+				D2F88E98150733300089E971 /* AppDelegate.m */,
+				D2F88E9A150733300089E971 /* UIImage+RIFAddition.h */,
+				D2F88E9B150733300089E971 /* UIImage+RIFAddition.m */,
+				D2F88E9D150733300089E971 /* iCadeFlixelClean.h */,
+				D2F88E9E150733300089E971 /* iCadeFlixelClean.m */,
+				D2F88EA0150733300089E971 /* iCadeFlixelCleanState.h */,
+				D2F88EA1150733300089E971 /* iCadeFlixelCleanState.m */,
+				D2C5F0E81507458E004B2CD2 /* iCadeButtonSprite.h */,
+				D2C5F0E91507458E004B2CD2 /* iCadeButtonSprite.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F88DF21507332F0089E971 /* iCadeFlixelClean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F88EA5150733300089E971 /* Build configuration list for PBXNativeTarget "iCadeFlixelClean" */;
+			buildPhases = (
+				D2F88DEF1507332F0089E971 /* Sources */,
+				D2F88DF01507332F0089E971 /* Frameworks */,
+				D2F88DF11507332F0089E971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCadeFlixelClean;
+			productName = iCadeFlixelClean;
+			productReference = D2F88DF31507332F0089E971 /* iCadeFlixelClean.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F88DEA1507332F0089E971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D2F88DED1507332F0089E971 /* Build configuration list for PBXProject "iCadeFlixelClean" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2F88DE81507332F0089E971;
+			productRefGroup = D2F88DF41507332F0089E971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F88DF21507332F0089E971 /* iCadeFlixelClean */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F88DF11507332F0089E971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F88E0C1507332F0089E971 /* Default.png in Resources */,
+				D2F88E101507332F0089E971 /* Icon-72.png in Resources */,
+				D2F88E121507332F0089E971 /* Icon-Small-50.png in Resources */,
+				D2F88E141507332F0089E971 /* Icon-Small.png in Resources */,
+				D2F88E161507332F0089E971 /* Icon-Small@2x.png in Resources */,
+				D2F88E181507332F0089E971 /* Icon.png in Resources */,
+				D2F88E1A1507332F0089E971 /* Icon@2x.png in Resources */,
+				D2F88E1D1507332F0089E971 /* iTunesArtwork in Resources */,
+				D2F88E20150733300089E971 /* ENGINE_LICENSE.TXT in Resources */,
+				D2F88E23150733300089E971 /* Flixel.ttf in Resources */,
+				D2F88EBE15073C060089E971 /* button-down-black.png in Resources */,
+				D2F88EBF15073C060089E971 /* button-down-white.png in Resources */,
+				D2F88EC015073C060089E971 /* button-down.png in Resources */,
+				D2F88EC115073C060089E971 /* button-up-black.png in Resources */,
+				D2F88EC215073C060089E971 /* button-up-white.png in Resources */,
+				D2F88EC315073C060089E971 /* button-up.png in Resources */,
+				D2F88EC415073C060089E971 /* red-ball.png in Resources */,
+				D2C5F0ED1507469E004B2CD2 /* buttons.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F88DEF1507332F0089E971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F88E25150733300089E971 /* FlixelFont.m in Sources */,
+				D2F88E50150733300089E971 /* FlashFunction.m in Sources */,
+				D2F88E52150733300089E971 /* FlashObject.m in Sources */,
+				D2F88E54150733300089E971 /* FlashPoint.m in Sources */,
+				D2F88E56150733300089E971 /* FlashRectangle.m in Sources */,
+				D2F88E59150733300089E971 /* FlixelAPTBindings.m in Sources */,
+				D2F88E5B150733300089E971 /* FlxAnim.m in Sources */,
+				D2F88E5D150733300089E971 /* FlxButton.m in Sources */,
+				D2F88E5F150733300089E971 /* FlxEmitter.m in Sources */,
+				D2F88E61150733300089E971 /* FlxFade.m in Sources */,
+				D2F88E63150733300089E971 /* FlxFlash.m in Sources */,
+				D2F88E65150733300089E971 /* FlxG.m in Sources */,
+				D2F88E67150733300089E971 /* FlxGame.m in Sources */,
+				D2F88E69150733300089E971 /* FlxGLView.m in Sources */,
+				D2F88E6B150733300089E971 /* FlxGroup.m in Sources */,
+				D2F88E6D150733300089E971 /* FlxList.m in Sources */,
+				D2F88E6F150733300089E971 /* FlxManagedSprite.m in Sources */,
+				D2F88E71150733300089E971 /* FlxObject.m in Sources */,
+				D2F88E73150733300089E971 /* FlxPoint.m in Sources */,
+				D2F88E75150733300089E971 /* FlxQuadTree.m in Sources */,
+				D2F88E77150733300089E971 /* FlxQuake.m in Sources */,
+				D2F88E79150733300089E971 /* FlxRect.m in Sources */,
+				D2F88E7B150733300089E971 /* FlxSave.m in Sources */,
+				D2F88E7D150733300089E971 /* FlxSound.m in Sources */,
+				D2F88E7F150733300089E971 /* FlxSprite.m in Sources */,
+				D2F88E81150733300089E971 /* FlxState.m in Sources */,
+				D2F88E83150733300089E971 /* FlxText.m in Sources */,
+				D2F88E85150733300089E971 /* FlxTileblock.m in Sources */,
+				D2F88E87150733300089E971 /* FlxTouches.m in Sources */,
+				D2F88E89150733300089E971 /* FlxU.m in Sources */,
+				D2F88E8C150733300089E971 /* SemiSecretFont.m in Sources */,
+				D2F88E8E150733300089E971 /* SemiSecretText.m in Sources */,
+				D2F88E90150733300089E971 /* SemiSecretTexture.m in Sources */,
+				D2F88E95150733300089E971 /* main.m in Sources */,
+				D2F88E99150733300089E971 /* AppDelegate.m in Sources */,
+				D2F88E9C150733300089E971 /* UIImage+RIFAddition.m in Sources */,
+				D2F88E9F150733300089E971 /* iCadeFlixelClean.m in Sources */,
+				D2F88EA2150733300089E971 /* iCadeFlixelCleanState.m in Sources */,
+				D2F88EB1150735830089E971 /* iCadeReaderView.m in Sources */,
+				D2C5F0EA1507458E004B2CD2 /* iCadeButtonSprite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D2F88EA3150733300089E971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2F88EA4150733300089E971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D2F88EA6150733300089E971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iCadeFlixelClean/Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/$(PROJECT_NAME)/flixel-ios/Headers\"";
+				INFOPLIST_FILE = iCadeFlixelClean/Resources/Info.plist;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2F88EA7150733300089E971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shane Brouwer (ASZS53L79E)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iCadeFlixelClean/Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/$(PROJECT_NAME)/flixel-ios/Headers\"";
+				INFOPLIST_FILE = iCadeFlixelClean/Resources/Info.plist;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "705BE5EA-E57F-4FC1-AD19-2F6D70F33AA2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F88DED1507332F0089E971 /* Build configuration list for PBXProject "iCadeFlixelClean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F88EA3150733300089E971 /* Debug */,
+				D2F88EA4150733300089E971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F88EA5150733300089E971 /* Build configuration list for PBXNativeTarget "iCadeFlixelClean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F88EA6150733300089E971 /* Debug */,
+				D2F88EA7150733300089E971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2F88DEA1507332F0089E971 /* Project object */;
+}
